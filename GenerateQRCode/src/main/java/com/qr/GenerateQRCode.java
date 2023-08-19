@@ -19,7 +19,8 @@ public class GenerateQRCode {
     String content = "https://trekcodes.blogspot.com/";
     String pathToStore = "D:\\Project\\Parivesh\\Files\\QRCodeGenerated.jpg";
 
-    BitMatrix bitMatrix = new MultiFormatWriter().encode(content, BarcodeFormat.QR_CODE, 500, 500);
+    BitMatrix bitMatrix = new MultiFormatWriter()
+        .encode(content, BarcodeFormat.QR_CODE, 500, 500);
     MatrixToImageWriter.writeToPath(bitMatrix, "jpg", Paths.get(pathToStore));
 
     System.out.println("QR Code Generated Successfully");
