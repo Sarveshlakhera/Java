@@ -17,19 +17,19 @@ import org.apache.logging.log4j.core.pattern.ConverterKeys;
 import org.apache.logging.log4j.core.pattern.LogEventPatternConverter;
 
 /**
- * @author vinay.sharma
+ * @author sarvesh.lakhera
  *
  */
-@Plugin(name = "OpIdPattern", category = LogEventPatternConverter.CATEGORY)
-@ConverterKeys({ "opId" })
-public class OpIdPattern extends LogEventPatternConverter {
+@Plugin(name = "AccIdPattern", category = LogEventPatternConverter.CATEGORY)
+@ConverterKeys({ "accId" })
+public class AccIdPattern extends LogEventPatternConverter {
 
   /**
    * @param name
    * @param style
    */
-  protected OpIdPattern(String[] options) {
-    super("OpIdPattern", null);
+  protected AccIdPattern(String[] options) {
+    super("AccIdPattern", null);
   }
 
   /**
@@ -38,12 +38,12 @@ public class OpIdPattern extends LogEventPatternConverter {
    * @param options options, may be null.
    * @return instance of pattern converter.
    */
-  public static OpIdPattern newInstance(final String[] options) {
-    return new OpIdPattern(options);
+  public static AccIdPattern newInstance(final String[] options) {
+    return new AccIdPattern(options);
   }
 
   @Override
   public void format(LogEvent event, StringBuilder toAppendTo) {
-    toAppendTo.append("opId234saddae2r42r4f");
+    toAppendTo.append("acc0729L");
   }
 }

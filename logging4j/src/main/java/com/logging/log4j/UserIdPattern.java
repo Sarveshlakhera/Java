@@ -17,19 +17,20 @@ import org.apache.logging.log4j.core.pattern.ConverterKeys;
 import org.apache.logging.log4j.core.pattern.LogEventPatternConverter;
 
 /**
- * @author vinay.sharma
+ * 
+ * @author sarvesh.lakhera
  *
  */
-@Plugin(name = "OrgIdPattern", category = LogEventPatternConverter.CATEGORY)
-@ConverterKeys({ "orgId" })
-public class OrgIdPattern extends LogEventPatternConverter {
+@Plugin(name = "UserIdPattern", category = LogEventPatternConverter.CATEGORY)
+@ConverterKeys({ "userId" })
+public class UserIdPattern extends LogEventPatternConverter {
 
   /**
    * @param name
    * @param style
    */
-  protected OrgIdPattern(String[] options) {
-    super("OrgIdPattern", null);
+  protected UserIdPattern(String[] options) {
+    super("UserIdPattern", null);
   }
 
   /**
@@ -38,12 +39,12 @@ public class OrgIdPattern extends LogEventPatternConverter {
    * @param options options, may be null.
    * @return instance of pattern converter.
    */
-  public static OrgIdPattern newInstance(final String[] options) {
-    return new OrgIdPattern(options);
+  public static UserIdPattern newInstance(final String[] options) {
+    return new UserIdPattern(options);
   }
 
   @Override
   public void format(LogEvent event, StringBuilder toAppendTo) {
-    toAppendTo.append("234");
+    toAppendTo.append("sarvesh@22");
   }
 }

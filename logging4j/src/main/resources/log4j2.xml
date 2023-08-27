@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Configuration status="WARN" packages="com.logging.log4j" monitorInterval="30">
     <Properties>
-        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss,SSS Z} %t %5p %c:%L [EnvId: %envId][OrgId: %orgId][OpId: %opId]- %m%n</Property>
+        <Property name="LOG_PATTERN">%d{yyyy-MM-dd HH:mm:ss,SSS Z} %t %5p %c:%L [EnvId: %envId][UserId: %userId][AccountId: %accId]- %m%n</Property>
     </Properties>
  
     <Appenders>
