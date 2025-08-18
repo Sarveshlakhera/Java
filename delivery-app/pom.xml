@@ -4,15 +4,15 @@
   <artifactId>delivery-app</artifactId>
   <version>0.0.1-SNAPSHOT</version>
   <packaging>pom</packaging>
-  
+
   <modules>
     <module>deliveryboy-kafka</module>
     <module>end-user</module>
   </modules>
   <parent>
-        <groupId>org.springframework.boot</groupId>
-        <artifactId>spring-boot-starter-parent</artifactId>
-        <version>3.5.4</version>
-        <relativePath/> <!-- lookup parent from repository -->
+    <groupId>org.springframework.boot</groupId>
+    <artifactId>spring-boot-starter-parent</artifactId>
+    <version>3.5.4</version>
+    <relativePath/> <!-- lookup parent from repository -->
    </parent>
 </project>  
